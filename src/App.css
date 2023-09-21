@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&family=Skranji&family=Source+Code+Pro:ital,wght@1,500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: Horror;
+  src: url(./assets/Fonts/GhastlyPanicCyr.otf);
+}
+:root {
+  --font-logo: "'EB Garamond', serif";
+  --font-title: "Horror";
+  --font-banner_text: "Source Code Pro", monospace;
+}
+html {
+  scroll-behavior: smooth;
+}
+.logo {
+  font-family: var(--font-logo);
+  font-size: 25px;
+}
+.title {
+  font-family: var(--font-title);
+  letter-spacing: 0.15em;
+  text-shadow: -2px 4px 35px rgba(0, 0, 0, 0.6);
+}
+.banner__text {
+  font-family: var(--font-banner_text);
+}
+#rotating-image {
+  animation: rotate 4s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
